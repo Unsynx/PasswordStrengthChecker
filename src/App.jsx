@@ -6,8 +6,8 @@ function App() {
   return (
     <>
     <h1 className="text-3xl font-bold underline">Hello, World</h1>
-    <form>
-      <input className="accent-black" 
+    <form onSubmit={e => e.preventDefault()}>
+      <input className="accent-black rounded" 
         type="text" 
         value={newPassword}
         onChange={e => setNewPassword(e.target.value)}
